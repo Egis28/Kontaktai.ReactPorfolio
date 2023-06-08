@@ -1,12 +1,14 @@
 import React from 'react'
-import ContactsForm from './components/ContactsForm'
-import QuestionsTable from './components/QuestionsTable'
+import ContactsForm from './components/ContactsForm';
+import QuestionsTable from './components/QuestionsTable';
+import MyNavbar from './components/MyNavbar';
 
 const App = () => {
   return (
-    <div>
-      <ContactsForm/>
-      <QuestionsTable/>
+    <div className="container">
+      <MyNavbar />
+      <ContactsForm />
+      <QuestionsTable />
     </div>
   )
 }
