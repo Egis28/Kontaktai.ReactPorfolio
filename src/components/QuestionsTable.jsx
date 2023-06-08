@@ -11,7 +11,7 @@ const QuestionTable = () =>{
   //funkcija gauti duomenis is db
   
   const getDataFromFirestore = async () => {
-    const querySnapshot = await getDocs (collection(db, "Clientsreq"));
+    const querySnapshot = await getDocs (collection(db, "clientsReq"));
     const tempQuestion = querySnapshot.docs.map((doc)=> (
       {
         id: doc.id,
